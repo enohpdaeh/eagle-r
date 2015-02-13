@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'date-utiils' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
 4 verbose node symlink /usr/bin/node
@@ -7,81 +7,63 @@
 6 warn package.json @ No repository field.
 7 warn package.json @ No README data
 8 verbose readDependencies using package.json deps
-9 verbose cache add [ 'date-utiils', null ]
-10 verbose cache add name=undefined spec="date-utiils" args=["date-utiils",null]
-11 verbose parsed url { protocol: null,
-11 verbose parsed url   slashes: null,
-11 verbose parsed url   auth: null,
-11 verbose parsed url   host: null,
-11 verbose parsed url   port: null,
-11 verbose parsed url   hostname: null,
-11 verbose parsed url   hash: null,
-11 verbose parsed url   search: null,
-11 verbose parsed url   query: null,
-11 verbose parsed url   pathname: 'date-utiils',
-11 verbose parsed url   path: 'date-utiils',
-11 verbose parsed url   href: 'date-utiils' }
-12 silly lockFile 3eb7cdc6-date-utiils date-utiils
-13 verbose lock date-utiils /home/takuya/.npm/3eb7cdc6-date-utiils.lock
-14 silly lockFile 3eb7cdc6-date-utiils date-utiils
-15 silly lockFile 3eb7cdc6-date-utiils date-utiils
-16 verbose addNamed [ 'date-utiils', '' ]
-17 verbose addNamed [ null, '*' ]
-18 silly lockFile e8d2c5cd-date-utiils date-utiils@
-19 verbose lock date-utiils@ /home/takuya/.npm/e8d2c5cd-date-utiils.lock
-20 silly addNameRange { name: 'date-utiils', range: '*', hasData: false }
-21 verbose request where is /date-utiils
-22 verbose request registry https://registry.npmjs.org/
-23 verbose request id 5fc19bae81fc9129
-24 verbose url raw /date-utiils
-25 verbose url resolving [ 'https://registry.npmjs.org/', './date-utiils' ]
-26 verbose url resolved https://registry.npmjs.org/date-utiils
-27 verbose request where is https://registry.npmjs.org/date-utiils
-28 info trying registry request attempt 1 at 01:26:28
-29 http GET https://registry.npmjs.org/date-utiils
-30 http 404 https://registry.npmjs.org/date-utiils
-31 verbose headers { date: 'Wed, 17 Dec 2014 16:26:29 GMT',
-31 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-31 verbose headers   'content-type': 'application/json',
-31 verbose headers   'cache-control': 'max-age=0',
-31 verbose headers   'content-length': '52',
-31 verbose headers   'accept-ranges': 'bytes',
-31 verbose headers   via: '1.1 varnish',
-31 verbose headers   age: '0',
-31 verbose headers   'x-served-by': 'cache-ty66-TYO',
-31 verbose headers   'x-cache': 'MISS',
-31 verbose headers   'x-cache-hits': '0',
-31 verbose headers   'x-timer': 'S1418833588.999609,VS0,VE128',
-31 verbose headers   'keep-alive': 'timeout=10, max=50',
-31 verbose headers   connection: 'Keep-Alive' }
-32 silly registry.get cb [ 404,
-32 silly registry.get   { date: 'Wed, 17 Dec 2014 16:26:29 GMT',
-32 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-32 silly registry.get     'content-type': 'application/json',
-32 silly registry.get     'cache-control': 'max-age=0',
-32 silly registry.get     'content-length': '52',
-32 silly registry.get     'accept-ranges': 'bytes',
-32 silly registry.get     via: '1.1 varnish',
-32 silly registry.get     age: '0',
-32 silly registry.get     'x-served-by': 'cache-ty66-TYO',
-32 silly registry.get     'x-cache': 'MISS',
-32 silly registry.get     'x-cache-hits': '0',
-32 silly registry.get     'x-timer': 'S1418833588.999609,VS0,VE128',
-32 silly registry.get     'keep-alive': 'timeout=10, max=50',
-32 silly registry.get     connection: 'Keep-Alive' } ]
-33 silly lockFile e8d2c5cd-date-utiils date-utiils@
-34 silly lockFile e8d2c5cd-date-utiils date-utiils@
-35 error 404 404 Not Found: date-utiils
-35 error 404
-35 error 404 'date-utiils' is not in the npm registry.
-35 error 404 You should bug the author to publish it
-35 error 404
-35 error 404 Note that you can also install from a
-35 error 404 tarball, folder, or http url, or git url.
-36 error System Linux 3.2.0-70-generic-pae
-37 error command "/usr/bin/node" "/usr/bin/npm" "install" "date-utiils"
-38 error cwd /home/takuya/Development/Eagle
-39 error node -v v0.10.33
-40 error npm -v 1.4.28
-41 error code E404
-42 verbose exit [ 1, true ]
+9 verbose install where, deps [ '/home/takuya/Development/Eagle', [ 'cheerio-httpcli' ] ]
+10 info preinstall @
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping cheerio-httpcli@* /home/takuya/Development/Eagle
+13 silly resolved []
+14 info build /home/takuya/Development/Eagle
+15 verbose linkStuff [ false, false, false, '/home/takuya/Development' ]
+16 info linkStuff @
+17 verbose linkBins @
+18 verbose linkMans @
+19 verbose rebuildBundles @
+20 verbose rebuildBundles [ '.bin',
+20 verbose rebuildBundles   'cheerio-httpcli',
+20 verbose rebuildBundles   'date-utils',
+20 verbose rebuildBundles   'dateformat',
+20 verbose rebuildBundles   'request' ]
+21 verbose rebuild bundle /home/takuya/Development/Eagle/node_modules/date-utils
+22 info build /home/takuya/Development/Eagle/node_modules/date-utils
+23 info preinstall date-utils@1.2.16
+24 verbose linkStuff [ false,
+24 verbose linkStuff   false,
+24 verbose linkStuff   false,
+24 verbose linkStuff   '/home/takuya/Development/Eagle/node_modules' ]
+25 info linkStuff date-utils@1.2.16
+26 verbose linkBins date-utils@1.2.16
+27 verbose linkMans date-utils@1.2.16
+28 verbose rebuildBundles date-utils@1.2.16
+29 info install date-utils@1.2.16
+30 info postinstall date-utils@1.2.16
+31 verbose rebuild bundle /home/takuya/Development/Eagle/node_modules/dateformat
+32 info build /home/takuya/Development/Eagle/node_modules/dateformat
+33 info preinstall dateformat@1.0.11
+34 verbose linkStuff [ false,
+34 verbose linkStuff   false,
+34 verbose linkStuff   false,
+34 verbose linkStuff   '/home/takuya/Development/Eagle/node_modules' ]
+35 info linkStuff dateformat@1.0.11
+36 verbose linkBins dateformat@1.0.11
+37 verbose link bins [ { dateformat: 'bin/cli.js' },
+37 verbose link bins   '/home/takuya/Development/Eagle/node_modules/.bin',
+37 verbose link bins   false ]
+38 verbose linkMans dateformat@1.0.11
+39 verbose rebuildBundles dateformat@1.0.11
+40 verbose rebuildBundles [ 'get-stdin', 'meow' ]
+41 error Error: EACCES, unlink '/home/takuya/Development/Eagle/node_modules/.bin/dateformat'
+41 error  { [Error: EACCES, unlink '/home/takuya/Development/Eagle/node_modules/.bin/dateformat']
+41 error   errno: 3,
+41 error   code: 'EACCES',
+41 error   path: '/home/takuya/Development/Eagle/node_modules/.bin/dateformat' }
+42 error Please try running this command again as root/Administrator.
+43 error System Linux 3.13.0-44-generic
+44 error command "/usr/bin/node" "/usr/bin/npm" "install"
+45 error cwd /home/takuya/Development/Eagle
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 error path /home/takuya/Development/Eagle/node_modules/.bin/dateformat
+49 error code EACCES
+50 error errno 3
+51 error stack Error: EACCES, unlink '/home/takuya/Development/Eagle/node_modules/.bin/dateformat'
+52 verbose exit [ 3, true ]

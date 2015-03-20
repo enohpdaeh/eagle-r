@@ -18,6 +18,7 @@ var yesterday = py + '-' + pm + '-' + pd;
 var num = [];
 var i = 0;
 var start = "";
+var total = "";
 
 console.log(yesterday);
 console.log('http://eagle.pt.teramoba2.com/rshounandai/standgraph/?rack_no=' + i + '&target_date=' + yesterday);
@@ -27,12 +28,16 @@ for(i = 638; i <= 1085; i++){
   }else{
     num.push(i.toString());
     client.fetch('http://eagle.pt.teramoba2.com/rshounandai/standgraph/?rack_no=' + i + '&target_date=' + yesterday, {}, function (err, $, res) {
-        console.log($('.box-base .box-article01 .st01').text().replace(/[\s+当り履歴スランプグラフ過去データ週間検索]/g, "").slice(0,15) + $('.box-base .box-article01 .navigate .current').text().replace(/\s+/g, ""));
+        console.log($('.box-base .box-article01 .st01').text().replace(/[\s+当り履歴スランプグラフ過去データ週間検索]/g, "").slice(0,15) + " " + $('.box-base .box-article01 .navigate .current').text().replace(/\s+/g, ""));
         $('.box-base .box-article01 .banBox .tables .left ol li img').each(function (idx) {
           start = start + $(this).attr('alt');
         });
-        console.log(start.slice(4,8));
+        $('.box-base .box-article01 .banBox .tables .right ol li img').each(function (idx) {
+          total = total + $(this).attr('alt');
+        });
+        console.log("最終" + start.slice(4,8) + "回" + " " + "総回転数" + total.slice(4,8) + "回");
         start = "";
+        total = "";
         });
   }
 }
